@@ -34,12 +34,19 @@ Filebeat observes log events and forwards the information to admin user.
 Metricbeat periodically collects metrics from the Operating systems of the VMs and services running on the servers.
 The configuration details of each machine may be found below.
 _
+
 | Name     | Function  | IP Address | Operating System |
+
 |----------|-----------|------------|------------------|
+
 | Jump Box | Gateway   | 10.0.0.4   | Linux            |
+
 | Web- 1   | Web Server| 10.0.0.5   | Linux            |
+
 | Web- 2   | Web Server| 10.0.0.6   | Linux            |
+
 | Elf-VM   | Log Server| 10.1.0.4   | Linux            |
+
 
 
 
@@ -53,12 +60,19 @@ Machines within the network can only be accessed by _Jump-box____.
 -Only the Jump box has access to the Elk vm via port 22.
 -A PC with I.P. on port 52.191.2.179:5602 can access ELK vm via port 22.
 A summary of the access policies in place can be found in the table below.
+
 | Name     | Publicly Accessible | Allowed IP Addresses |
+
 |----------|---------------------|----------------------|
+
 | Jump Box | Yes                 |   52.191.2.179       |
+
 | Web-1    | no                  |   10.0.0.4 &10.1.0.4 |
+
 | Web-2    | no                  |   10.0.0.4 &10.1.0.4 |
+
 | ELF-vm   | NO                  |   10.0.0.4           |
+
 
 ### Elk Configuration
 
