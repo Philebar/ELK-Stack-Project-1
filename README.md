@@ -32,7 +32,7 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
 
 - What aspect of security do load balancers protect? What is the advantage of a jump box? 
-Load balancer protect the Availability to network traffic services and help minimize the effects of Ddos attacks.
+Load balancer protects the Availability to network traffic services and help minimize the effects of *Ddos* attacks.
 
 The advantage of the jump box is to provide consistent access to the end-user.
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the network and system logs.
@@ -47,15 +47,21 @@ _
 
 | Name     | Function  | IP Address | Operating System |
 
+
 |----------|-----------|------------|------------------|
+
 
 | Jump Box | Gateway   | 10.0.0.4   | Linux            |
 
+
 | Web- 1   | Web Server| 10.0.0.5   | Linux            |
+
 
 | Web- 2   | Web Server| 10.0.0.6   | Linux            |
 
+
 | Elf-VM   | Log Server| 10.1.0.4   | Linux            |
+
 
 
 
@@ -63,12 +69,17 @@ _
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
-Only the _Jump-Box-Provisioner____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the Jump-Box-Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+
 - azuresuser@52.191.2.179
-Machines within the network can only be accessed by _Jump-box____.
-- _: Which machine did you allow to access your ELK VM? What was its IP address?
+- 
+Machines within the network can only be accessed by Jump-box.
+- Which machine did you allow to access your ELK VM? What was its IP address?
+- 
 -Only the Jump box has access to the Elk vm via port 22.
+
 -A PC with I.P. on port 52.191.2.179:5602 can access ELK vm via port 22.
+
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
@@ -113,11 +124,13 @@ The following screenshot displays the result of running `docker ps` after succes
 This ELK server is configured to monitor the following machines:
 
 -web-1 10.0.0.5
+
 -web-2 10.0.0.6
 
 We have installed the following Beats on these machines:
 
 -Filebeat version 7.4.0
+
 -Metricbeat version 7.4.0
 
 These Beats allow us to collect the following information from each machine:
@@ -130,23 +143,23 @@ Metricbeat takes metrics and statistics that it collects to output at a specific
 
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 SSH into the control node and follow the steps below:
-- Copy the ___ filebeat-playbook.yml__ file to __ /etc/ansible/files/filebeat-config.yml ___.
-- Update the _filebeat-config.yml____ file to include...
-- Run the playbook, and navigate to __host I.P. and port number_52.191.2.179:5601_ to check that the installation worked as expected.
+- Copy the filebeat-playbook.yml file to /etc/ansible/files/filebeat-config.yml.
+- Update the filebeat-config.yml file to include...
+- Run the playbook, and navigate to host I.P. and port number 52.191.2.179:5601 to check that the installation worked as expected.
 
-- _Which file is the playbook? Where do you copy it?_
+- Which file is the playbook? Where do you copy it?
 
 ELK_Play_book.YML, to Jump Box is root root@58697de3ce36:/etc/ansible#
 
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+- Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
 
 Ansible.cfg and /stc/ansible/ host.cfg
 
-- _Which URL do you navigate to in order to check that the ELK server is running?
+- Which URL do you navigate to in order to check that the ELK server is running?
 _ 
 http://20.114.199.254:5601/app/kibana#/home
 _
-As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+Specific commands needed to run and download the playbook, update the files, etc._
 
 Ansible-playbook ELK_Plsay_Book.ymlexit
-Sudo 
+ 
