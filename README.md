@@ -71,14 +71,15 @@ _
 The machines on the internal network are not exposed to the public Internet. 
 Only the Jump-Box-Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 
-- azuresuser@52.191.2.179
+ -azuresuser@52.191.2.179
 
 Machines within the network can only be accessed by Jump-box.
+
 - Which machine did you allow to access your ELK VM? What was its IP address?
 
--Only the Jump box has access to the Elk vm via port 22.
+ -Only the Jump box has access to the Elk vm via port 22.
 
--A PC with I.P. on port 52.191.2.179:5602 can access ELK vm via port 22.
+ -A PC with I.P. on port 52.191.2.179:5602 can access ELK vm via port 22.
 
 A summary of the access policies in place can be found in the table below.
 
@@ -143,24 +144,24 @@ Metricbeat takes metrics and statistics that it collects to output at a specific
 
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 SSH into the control node and follow the steps below:
-- Copy the filebeat-playbook.yml file to /etc/ansible/files/filebeat-config.yml.
-- Update the filebeat-config.yml file to include...
-- Run the playbook, and navigate to host I.P. and port number 52.191.2.179:5601 to check that the installation worked as expected.
+ -Copy the filebeat-playbook.yml file to /etc/ansible/files/filebeat-config.yml.
+ -Update the filebeat-config.yml file to include...
+ -Run the playbook, and navigate to host I.P. and port number 52.191.2.179:5601 to check that the installation worked as expected.
 
-Which file is the playbook? Where do you copy it?
+- Which file is the playbook? Where do you copy it?
 
-ELK_Play_book.YML, to Jump Box is root root@58697de3ce36:/etc/ansible#
+ -ELK_Play_book.YML, to Jump Box is root root@58697de3ce36:/etc/ansible#
 
-Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
+- Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
 
-- Ansible.cfg  
-- /stc/ansible/host.cfg
+ -Ansible.cfg  
+ -/stc/ansible/host.cfg
 
-Which URL do you navigate to in order to check that the ELK server is running?
+- Which URL do you navigate to in order to check that the ELK server is running?
 
-*http://20.114.199.254:5601/app/kibana#/home*
+*-http://20.114.199.254:5601/app/kibana#/home*
 
 Specific commands needed to run and download the playbook, update the files, etc.
 
-*Ansible-playbook ELK_Play_Book.yml*
+*-Ansible-playbook ELK_Play_Book.yml*
  
