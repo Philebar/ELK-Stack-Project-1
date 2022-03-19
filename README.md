@@ -147,20 +147,20 @@ SSH into the control node and follow the steps below:
 - Update the filebeat-config.yml file to include...
 - Run the playbook, and navigate to host I.P. and port number 52.191.2.179:5601 to check that the installation worked as expected.
 
-- Which file is the playbook? Where do you copy it?
+Which file is the playbook? Where do you copy it?
 
 ELK_Play_book.YML, to Jump Box is root root@58697de3ce36:/etc/ansible#
 
-- Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
+Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
 
 - Ansible.cfg  
 - /stc/ansible/host.cfg
 
-- Which URL do you navigate to in order to check that the ELK server is running?
+Which URL do you navigate to in order to check that the ELK server is running?
 
 *http://20.114.199.254:5601/app/kibana#/home*
 
 Specific commands needed to run and download the playbook, update the files, etc.
 
-*Ansible-playbook ELK_Plsay_Book.ymlexit*
+*Ansible-playbook ELK_Play_Book.yml*
  
