@@ -17,7 +17,7 @@ This document contains the following details:
 - How to Use the Ansible Build
 
 ### Description of the Topology
-
+<img src="ELK-Stack-Project-1/ELK_Stack_Diagram.png">
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 Load balancing ensures that the application will be highly _available____, in addition to restricting _access____ to the network.
 
