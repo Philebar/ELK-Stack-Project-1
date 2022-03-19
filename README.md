@@ -81,7 +81,7 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
-Setup is simple and no special coding skills are necessary to use. The program is flexible and coordinates entire application environment. A simple and selefishent way of setting out a process.
+Setup is simple and no special coding skills are necessary to use. The program is flexible and coordinates entire application environment. A simple and sufficient way of setting out a process.
 
 The playbook implements the following tasks:
   
