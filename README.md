@@ -1,11 +1,14 @@
 # ELK-Stack-Project-1
+
 This is a ELK Stack setup up with AZURE Cloud Security.
-## Automated ELK Stack Deployment
+
+<b>*## Automated ELK Stack Deployment*</b>
 
 The files in this repository were used to configure the network depicted below.
 
-Images/ELK_Stack_Diagram.png)
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ___
+<img src="ELK_Stack_Diagram.PNG">
+
+  These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ___
 , Metric_Playbook.YML, Filebeat_Playbook.YML ELK_Play_book.YML, YAML_Playbook.YML__ file may be used to install only certain pieces of it, such as Filebeat.
   IN this folder: ELK-Stack_Project-1
 This document contains the following details:
@@ -17,7 +20,7 @@ This document contains the following details:
 - How to Use the Ansible Build
 
 ### Description of the Topology
-<img src="ELK_Stack_Diagram.PNG">
+
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 Load balancing ensures that the application will be highly _available____, in addition to restricting _access____ to the network.
 
@@ -78,20 +81,25 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
-- What is the main advantage of automating configuration with Ansible?_
-Setup is simple and no special coding skills are necessary to use. The program is flexible and coordinates entire application environment.
+Setup is simple and no special coding skills are necessary to use. The program is flexible and coordinates entire application environment. A simple and selefishent way of setting out a process.
+
 The playbook implements the following tasks:
-- 
-•	Install docker.io
-•	Install pip3
-•	Install Docker python module
-•	Increase VM memory
-•	Download and launch ELK container
-•	Enable docker services
+  
+  •	Install docker.io
+  
+  •	Install pip3
+  
+  •	Install Docker python module
+  
+  •	Increase VM memory
+  
+  •	Download and launch ELK container
+  
+  •	Enable docker services
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
  
-(Images/Docker PS ELK.png)
+<img src="Docker PS Elk.PNG">
 
 ### Target Machines & Beats
 
