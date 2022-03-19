@@ -72,10 +72,10 @@ The machines on the internal network are not exposed to the public Internet.
 Only the Jump-Box-Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 
 - azuresuser@52.191.2.179
-- 
+
 Machines within the network can only be accessed by Jump-box.
 - Which machine did you allow to access your ELK VM? What was its IP address?
-- 
+
 -Only the Jump box has access to the Elk vm via port 22.
 
 -A PC with I.P. on port 52.191.2.179:5602 can access ELK vm via port 22.
