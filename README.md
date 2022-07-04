@@ -8,7 +8,7 @@ The files in this repository were used to configure the network depicted below.
 
 <img src="ELK_Stack_Diagram.PNG">
 
-  These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either to recreate the entire deployment pictured above. Alternatively, select portions of the, [Metric_Playbook.YML](Metric_Playbook.txt), [Filebeat_Playbook.YML](Filebeat_Playbook.txt), [ELK_Play_book.YML](../ELk_Play_Book.txt), [YAML_Playbook.YML](YAML_Playbook.txt) file may be used to install only certain pieces of it, such as Filebeat.
+  These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either to recreate the entire deployment pictured above. Alternatively, select portions of the, [Metric_Playbook.YML](Metric_Playbook.txt), [Filebeat_Playbook.YML](Filebeat_Playbook.txt), [ELK_Play_book.YML](ELk_Play_Book.txt), [YAML_Playbook.YML](YAML_Playbook.txt) file may be used to install only certain pieces of it, such as Filebeat.
   
   IN this folder: <b>ELK-Stack_Project-1</b>
 This document contains the following details:
