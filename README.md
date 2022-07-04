@@ -150,11 +150,14 @@ SSH into the control node and follow the steps below:
 
 - Which file is the playbook? Where do you copy it?
 
- -ELK_Play_book.YML, to Jump Box is root root@58697de3ce36:/etc/ansible#
+ -( ELK_Play_book.YML ) is the playbook, and it is copyed to the Jump Box is root ( root@58697de3ce36:/etc/ansible#).
 
-- Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
+- Which file do you update to make Ansible run the playbook on a specific machine?
 
  -Ansible.cfg  
+ 
+  How do I specify which machine to install the ELK server on versus which to install Filebeat on?
+  
  -/stc/ansible/host.cfg
 
 - Which URL do you navigate to in order to check that the ELK server is running?
